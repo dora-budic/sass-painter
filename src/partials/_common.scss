@@ -1,7 +1,4 @@
 .list-style {
-  @include inline-list;
-}
-
-.mb-20 {
-  margin-bottom: 20px;
+  list-style: none;
+  display: flex;
 }

@@ -14,22 +14,18 @@ body {
   display: flex;
 }
 
-.mb-20 {
-  margin-bottom: 20px;
-}
-
 nav {
-  height: 95px;
   background-color: #000;
-  display: flex;
-  align-items: center;
 }
 nav .navbar {
-  width: 80%;
+  width: 85%;
   margin-left: auto;
   margin-right: auto;
+  height: 95px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  padding-top: 10px;
 }
 nav .navbar .contacts {
   display: flex;
@@ -43,6 +39,10 @@ nav .navbar .contacts ul li a {
   color: #989898;
   font-size: 12px;
 }
+nav .navbar .contacts ul li a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
 nav .navbar .contacts ul li a i {
   margin-right: 5px;
   font-size: 15px;
@@ -53,6 +53,7 @@ nav .navbar .navigation {
   align-items: center;
 }
 nav .navbar .navigation .logo {
+  padding-bottom: 10px;
   margin-right: 30px;
 }
 nav .navbar .navigation .logo img {
@@ -61,13 +62,20 @@ nav .navbar .navigation .logo img {
 nav .navbar .navigation ul li {
   margin-right: 20px;
   font-size: 13px;
+  padding: 12px;
+}
+nav .navbar .navigation ul li:hover {
+  background-color: #F1F1F1;
 }
 nav .navbar .navigation ul li a {
-  text-decoration: none;
   color: #fff;
+  text-decoration: none;
 }
 nav .navbar .navigation ul li a i {
   margin-left: 5px;
   font-size: 11px;
   color: #989898;
+}
+nav .navbar .navigation ul li:hover a {
+  color: #333333;
 }

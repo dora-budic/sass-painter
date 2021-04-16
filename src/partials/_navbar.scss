@@ -1,13 +1,13 @@
 nav {
-  height: $nav-height;
   background-color: $black;
-  display: flex;
-  align-items: center;
 
   .navbar {
     @include container-center;
+    height: $nav-height;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    padding-top: 10px;
 
     .contacts {
       display: flex;
@@ -20,6 +20,11 @@ nav {
             text-decoration: none;
             color: $grey;
             font-size: 12px;
+
+            &:hover {
+              color: $white;
+              text-decoration: underline;
+            }
             i {
               margin-right: $icon-margin;
               font-size: 15px;
@@ -35,6 +40,7 @@ nav {
       align-items: center;
 
       .logo {
+        padding-bottom: 10px;
         margin-right: 30px;
         img {
           width: 100px;
@@ -45,14 +51,26 @@ nav {
         li {
           margin-right: 20px;
           font-size: 13px;
+          padding: 12px;
+
+          &:hover {
+            background-color: $lightGrey;
+          }
+
           a {
-            text-decoration: none;
             color: $white;
+            text-decoration: none;
 
             i {
               margin-left: $icon-margin;
               font-size: 11px;
               color: $grey;
+            }
+          }
+
+          &:hover {
+            a {
+              color: $text-hover;
             }
           }
         }
