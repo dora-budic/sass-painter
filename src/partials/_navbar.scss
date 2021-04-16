@@ -1,22 +1,63 @@
 nav {
   height: $nav-height;
   background-color: $black;
+  display: flex;
+  align-items: center;
 
   .navbar {
     @include container-center;
-    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
 
     .contacts {
       display: flex;
       justify-content: flex-end;
-      a {
-        text-decoration: none;
-        color: $grey;
-        font-size: 12px;
-        i {
-          color: $blue;
+
+      ul {
+        li {
+          margin-right: 20px;
+          a {
+            text-decoration: none;
+            color: $grey;
+            font-size: 12px;
+            i {
+              margin-right: $icon-margin;
+              font-size: 15px;
+              color: $blue;
+            }
+          }
         }
       }
+    }
+
+    .navigation {
+      display: flex;
+      align-items: center;
+
+      .logo {
+        margin-right: 30px;
+        img {
+          width: 100px;
+        }
+      }
+
+      ul {
+        li {
+          margin-right: 20px;
+          font-size: 13px;
+          a {
+            text-decoration: none;
+            color: $white;
+
+            i {
+              margin-left: $icon-margin;
+              font-size: 11px;
+              color: $grey;
+            }
+          }
+        }
+      }
+
     }
 
   }
