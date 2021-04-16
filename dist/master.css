@@ -1,1 +1,46 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
 
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.list-style {
+  list-style: none;
+  display: flex;
+}
+
+.mr-5 {
+  margin-right: 5px;
+}
+
+.mr-15 {
+  margin-right: 15px;
+}
+
+nav {
+  height: 95px;
+  background-color: #000;
+}
+nav .navbar {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 0;
+}
+nav .navbar .contacts {
+  display: flex;
+  justify-content: flex-end;
+}
+nav .navbar .contacts a {
+  text-decoration: none;
+  color: #989898;
+  font-size: 12px;
+}
+nav .navbar .contacts a i {
+  color: #009CFF;
+}

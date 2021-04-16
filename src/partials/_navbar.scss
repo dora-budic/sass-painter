@@ -1,0 +1,24 @@
+nav {
+  height: $nav-height;
+  background-color: $black;
+
+  .navbar {
+    @include container-center;
+    padding: 10px 0;
+
+    .contacts {
+      display: flex;
+      justify-content: flex-end;
+      a {
+        text-decoration: none;
+        color: $grey;
+        font-size: 12px;
+        i {
+          color: $blue;
+        }
+      }
+    }
+
+  }
+
+}

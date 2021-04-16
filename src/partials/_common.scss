@@ -1,0 +1,11 @@
+.list-style {
+  @include inline-list;
+}
+
+.mr-5 {
+  margin-right: 5px;
+}
+
+.mr-15 {
+  margin-right: 15px;
+}
