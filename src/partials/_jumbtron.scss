@@ -1,0 +1,55 @@
+.jumbtron {
+  background-image: url('../dist/img/bg-painter-home.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+
+  .text-container {
+    @include container-center;
+    padding: 50px 0 70px;
+
+    .jumbo-text {
+      width: 50%;
+
+      img {
+        width: 230px;
+      }
+
+      .buttons {
+        ul {
+          li:first-child {
+            @include button($black, $black);
+
+            a {
+              @include a-style($white);
+            }
+
+            &:hover {
+              background-color: transparent;
+              a {
+                color: $black;
+              }
+            }
+          }
+
+          li:last-child {
+            @include button(none,$black);
+
+            a {
+              @include a-style($black);
+            }
+
+            &:hover {
+              background-color: $black;
+              a {
+                color: $white;
+              }
+            }
+          }
+
+        }
+      }
+    }
+
+  }
+}

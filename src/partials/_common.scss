@@ -2,3 +2,29 @@
   list-style: none;
   display: flex;
 }
+
+// PADDING/MARGIN
+.pt-10 {
+  padding-top: 10px;
+}
+
+.pb-20 {
+  padding-bottom: 20px;
+}
+
+// FONTS
+.p-font {
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.offers-font {
+  font-style: italic;
+  color: $purple;
+  font-size: 14px;
+}
+
+.font-bold {
+  font-weight: bold;
+}

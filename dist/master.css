@@ -14,6 +14,30 @@ body {
   display: flex;
 }
 
+.pt-10 {
+  padding-top: 10px;
+}
+
+.pb-20 {
+  padding-bottom: 20px;
+}
+
+.p-font {
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.offers-font {
+  font-style: italic;
+  color: #C70EB8;
+  font-size: 14px;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
 nav {
   background-color: #000;
 }
@@ -25,7 +49,6 @@ nav .navbar {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-top: 10px;
 }
 nav .navbar .contacts {
   display: flex;
@@ -57,7 +80,7 @@ nav .navbar .navigation .logo {
   margin-right: 30px;
 }
 nav .navbar .navigation .logo img {
-  width: 100px;
+  width: 90px;
 }
 nav .navbar .navigation ul li {
   margin-right: 20px;
@@ -68,8 +91,8 @@ nav .navbar .navigation ul li:hover {
   background-color: #F1F1F1;
 }
 nav .navbar .navigation ul li a {
-  color: #fff;
   text-decoration: none;
+  color: #fff;
 }
 nav .navbar .navigation ul li a i {
   margin-left: 5px;
@@ -78,4 +101,57 @@ nav .navbar .navigation ul li a i {
 }
 nav .navbar .navigation ul li:hover a {
   color: #333333;
+}
+
+.jumbtron {
+  background-image: url("../dist/img/bg-painter-home.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.jumbtron .text-container {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px 0 70px;
+}
+.jumbtron .text-container .jumbo-text {
+  width: 50%;
+}
+.jumbtron .text-container .jumbo-text img {
+  width: 230px;
+}
+.jumbtron .text-container .jumbo-text .buttons ul li:first-child {
+  padding: 5px 20px;
+  background-color: #000;
+  border: 1px solid #000;
+  text-transform: uppercase;
+  margin-right: 20px;
+}
+.jumbtron .text-container .jumbo-text .buttons ul li:first-child a {
+  text-decoration: none;
+  color: #fff;
+}
+.jumbtron .text-container .jumbo-text .buttons ul li:first-child:hover {
+  background-color: transparent;
+}
+.jumbtron .text-container .jumbo-text .buttons ul li:first-child:hover a {
+  color: #000;
+}
+.jumbtron .text-container .jumbo-text .buttons ul li:last-child {
+  padding: 5px 20px;
+  background-color: none;
+  border: 1px solid #000;
+  text-transform: uppercase;
+  margin-right: 20px;
+}
+.jumbtron .text-container .jumbo-text .buttons ul li:last-child a {
+  text-decoration: none;
+  color: #000;
+}
+.jumbtron .text-container .jumbo-text .buttons ul li:last-child:hover {
+  background-color: #000;
+}
+.jumbtron .text-container .jumbo-text .buttons ul li:last-child:hover a {
+  color: #fff;
 }
