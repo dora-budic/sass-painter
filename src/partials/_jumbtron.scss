@@ -1,8 +1,6 @@
 .jumbtron {
-  background-image: url('../dist/img/bg-painter-home.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: right;
+  @include bg-image('../dist/img/bg-painter-home.jpg', right);
+  // background-position: right;
 
   .text-container {
     @include container-center;

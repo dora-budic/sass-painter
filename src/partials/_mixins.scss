@@ -28,3 +28,10 @@
   text-transform: uppercase;
   margin-right: 20px;
 }
+
+@mixin bg-image($url,$position) {
+  background-image: url($url);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: $position;
+}
