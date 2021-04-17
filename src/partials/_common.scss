@@ -37,9 +37,33 @@
 }
 
 .bg-grey {
-  background-color: #3C3C3C;
+  background-color: $darkGrey;
 }
 
 .bg-blue {
   background-color: #0072BC;
+}
+
+.ig-color {
+  background-color: #E4405F;
+}
+
+.fb-color {
+  background-color: #3B5998;
+}
+
+.tw-color {
+  background-color: #1DA1F2;
+}
+
+.yt-color {
+  background-color: #CD201F;
+}
+
+.pt-color {
+  background-color: #BD081C;
+}
+
+.rss-color {
+  background-color: #FF8D00;
 }
