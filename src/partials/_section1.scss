@@ -1,0 +1,59 @@
+main {
+  background-color: #E8E8E8;
+
+  .container {
+    @include container-center;
+
+    #modules {
+      & > p {
+        text-align: center;
+        font-size: $title-size;
+      }
+
+      .options {
+        display: flex;
+        justify-content: space-between;
+        div {
+          width: calc(100% / 3 - 20px);
+          display: flex;
+          flex-direction: column;
+
+          img {
+            width: 100%;
+          }
+
+          .text {
+            background-color: $white;
+            padding: 20px;
+            width: 100%;
+
+            h4 {
+              span {
+                text-transform: uppercase;
+                color:$blue;
+                font-style: italic;
+                padding-right: 5px;
+              }
+            }
+
+            p {
+              font-size: 14px;
+            }
+
+            a {
+              @include a-style($blue);
+              font-size: 14px;
+
+              &:hover {
+                text-decoration: underline;
+
+              }
+            }
+          }
+
+        }
+      }
+    }
+  }
+
+}

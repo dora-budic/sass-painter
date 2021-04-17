@@ -15,6 +15,14 @@
         width: 230px;
       }
 
+      p {
+        @include p-font;
+      }
+
+      div.offer {
+        @include offers-font;
+      }
+
       .buttons {
         ul {
           li:first-child {

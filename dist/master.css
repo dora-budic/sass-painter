@@ -18,24 +18,33 @@ body {
   padding-top: 10px;
 }
 
+.pt-30 {
+  padding-top: 30px;
+}
+
 .pb-20 {
   padding-bottom: 20px;
 }
 
-.p-font {
-  font-size: 18px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+.my-10 {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-.offers-font {
-  font-style: italic;
-  color: #C70EB8;
-  font-size: 14px;
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mt-30 {
+  margin-top: 30px;
 }
 
 .font-bold {
   font-weight: bold;
+}
+
+.bg-purple {
+  background-color: #3C1567;
 }
 
 nav {
@@ -121,6 +130,16 @@ nav .navbar .navigation ul li:hover a {
 .jumbtron .text-container .jumbo-text img {
   width: 230px;
 }
+.jumbtron .text-container .jumbo-text p {
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.jumbtron .text-container .jumbo-text div.offer {
+  font-style: italic;
+  color: #C70EB8;
+  font-size: 14px;
+}
 .jumbtron .text-container .jumbo-text .buttons ul li:first-child {
   padding: 5px 20px;
   background-color: #000;
@@ -154,4 +173,99 @@ nav .navbar .navigation ul li:hover a {
 }
 .jumbtron .text-container .jumbo-text .buttons ul li:last-child:hover a {
   color: #fff;
+}
+
+main {
+  background-color: #E8E8E8;
+}
+main .container {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+main .container #modules > p {
+  text-align: center;
+  font-size: 30px;
+}
+main .container #modules .options {
+  display: flex;
+  justify-content: space-between;
+}
+main .container #modules .options div {
+  width: calc(100% / 3 - 20px);
+  display: flex;
+  flex-direction: column;
+}
+main .container #modules .options div img {
+  width: 100%;
+}
+main .container #modules .options div .text {
+  background-color: #fff;
+  padding: 20px;
+  width: 100%;
+}
+main .container #modules .options div .text h4 span {
+  text-transform: uppercase;
+  color: #009CFF;
+  font-style: italic;
+  padding-right: 5px;
+}
+main .container #modules .options div .text p {
+  font-size: 14px;
+}
+main .container #modules .options div .text a {
+  text-decoration: none;
+  color: #009CFF;
+  font-size: 14px;
+}
+main .container #modules .options div .text a:hover {
+  text-decoration: underline;
+}
+
+#advantages .adv-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+#advantages .adv-container .card {
+  width: 50%;
+  height: 250px;
+}
+#advantages .adv-container .card .card-text {
+  color: #fff;
+  padding: 40px 30px 0;
+}
+#advantages .adv-container .card .card-text p:first-child {
+  font-size: 30px;
+}
+#advantages .adv-container .card .card-text p:nth-child(2) {
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#advantages .adv-container .card .card-text span {
+  padding: 5px 20px;
+  background-color: #fff;
+  border: 1px solid #fff;
+  text-transform: uppercase;
+  margin-right: 20px;
+}
+#advantages .adv-container .card .card-text span a {
+  text-decoration: none;
+  color: #000;
+}
+#advantages .adv-container .card .card-text span:hover {
+  background-color: transparent;
+  border-color: #fff;
+}
+#advantages .adv-container .card .card-text span:hover a {
+  color: #fff;
+}
+#advantages .adv-container .card.pink {
+  background-image: url("../dist/img/wacom-painter.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 10px 0 0 10px;
+}
+#advantages .adv-container .card.pink > img {
+  width: 65%;
 }
