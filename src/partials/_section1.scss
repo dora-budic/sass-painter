@@ -2,9 +2,9 @@ main {
   background-color: #E8E8E8;
 
   .container {
-    @include container-center;
-
     #modules {
+      @include container-center;
+
       & > p {
         text-align: center;
         font-size: $title-size;
@@ -13,13 +13,36 @@ main {
       .options {
         display: flex;
         justify-content: space-between;
-        div {
+
+        @media all and (max-width: $breakpoint-sm) {
+          flex-wrap: wrap;
+          justify-content: flex-start;
+        }
+
+        & > div {
           width: calc(100% / 3 - 20px);
           display: flex;
           flex-direction: column;
 
-          img {
+          @media all and (max-width: $breakpoint-sm) {
             width: 100%;
+            margin-bottom: 20px;
+          }
+
+          .module-image {
+            position: relative;
+            width: 100%;
+            display: flex;
+
+            img {
+              width: 100%;
+            }
+
+            span {
+              @include credits($grey);
+              bottom: 10px;
+              right: 20px;
+            }
           }
 
           .text {

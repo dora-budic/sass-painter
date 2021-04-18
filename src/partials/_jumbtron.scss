@@ -1,28 +1,97 @@
 .jumbtron {
   @include bg-image('../dist/img/bg-painter-home.jpg', right);
-  // background-position: right;
+  position: relative;
+
+  @media all and (max-width: $breakpoint-sm) {
+    background-size: auto;
+    background-position: 68% 50%;
+  }
 
   .text-container {
     @include container-center;
     padding: 50px 0 70px;
 
+    @media all and (max-width: $breakpoint-sm) {
+      background-color: rgba(0,0,0,0.8);
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: 65px;
+      padding-right: 65px;
+    }
+
     .jumbo-text {
       width: 50%;
 
-      img {
-        width: 230px;
+      @media all and (max-width: $breakpoint-sm) {
+        width: 100%;
+        text-align: center;
       }
 
-      p {
+      img {
+        width: 230px;
+
+        &.logo-black {
+          @media all and (max-width: $breakpoint-sm) {
+            display:none;
+          }
+        }
+
+        &.logo-white {
+          display: none;
+
+          @media all and (max-width: $breakpoint-sm) {
+            display:inline-block;
+          }
+        }
+      }
+
+      & > p {
         @include p-font;
+
+        @media all and (max-width: $breakpoint-sm) {
+          color: $white;
+        }
+      }
+
+      ul.button-mobile {
+        display: none;
+
+        li {
+          @include button($white, $white);
+          a {
+            @include a-style($black);
+          }
+
+          &:hover {
+            background-color: transparent;
+            a {
+              color: $white;
+            }
+          }
+        }
+
+        @media all and (max-width: $breakpoint-sm) {
+          display: inline-block;
+          margin: 0 auto;
+        }
       }
 
       div.offer {
         @include offers-font;
+
+        @media all and (max-width: $breakpoint-sm) {
+          color: $white;
+        }
       }
 
       .buttons {
         ul {
+
+          @media all and (max-width: $breakpoint-sm) {
+            display: none;
+          }
+
           li:first-child {
             @include button($black, $black);
 
@@ -56,6 +125,11 @@
         }
       }
     }
+  }
 
+  & > span {
+    @include credits($white);
+    right: 20px;
+    bottom: 20px;
   }
 }

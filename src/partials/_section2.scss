@@ -1,12 +1,26 @@
 #advantages {
+  @include container-center;
   margin-top: 80px;
+
+  @media all and (max-width: $breakpoint-sm) {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 40px;
+  }
 
   .adv-container {
     display: flex;
     flex-wrap: wrap;
+
     .card {
       width: 50%;
       height: 300px;
+
+      @media all and (max-width: $breakpoint-sm) {
+        width: 100%;
+      }
+
 
       .card-text {
         color: $white;
@@ -42,14 +56,29 @@
     .card.pink {
       @include bg-image('../dist/img/wacom-painter.jpg',center);
       padding: 10px 0 0 10px;
+      position: relative;
 
-      & > img {
+      img {
         width: 75%;
+      }
+
+      span {
+        @include credits($grey);
+        left: 20px;
+        bottom: 20px;
       }
     }
 
     .card.dragon {
       @include bg-image('../dist/img/painter-master.jpg',center);
+      position: relative;
+
+      span {
+        @include credits($grey);
+        left: 20px;
+        bottom: 20px;
+      }
+
     }
 
     .card.desk {

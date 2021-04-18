@@ -35,3 +35,9 @@
   background-repeat: no-repeat;
   background-position: $position;
 }
+
+@mixin credits($color) {
+  position: absolute;
+  font-size: 11px;
+  color: $color;
+}

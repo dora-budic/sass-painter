@@ -14,6 +14,9 @@
     <header>
       <nav>
         <div class="navbar pt-10">
+          <div class="hamburger">
+            <i class="fas fa-bars"></i>
+          </div>
           <!-- Contacts in righ upper angle -->
           <div class="contacts">
             <ul class="list-style">
@@ -51,8 +54,12 @@
       <div class="jumbtron">
         <div class="text-container">
           <div class="jumbo-text">
-            <img src="./dist/img/painter-2021-wm-black.png" alt="logo painter 2021">
+            <img class="logo-black" src="./dist/img/painter-2021-wm-black.png" alt="logo painter 2021">
+            <img class="logo-white" src="./dist/img/painter-2021-wm-white.png" alt="logo painter 2021">
             <p>The most realistic painting experience you'll find hard to resist</p>
+            <ul class="list-style button-mobile">
+              <li><a href="#">Learn more</a></li>
+            </ul>
             <div class="offer pt-10 pb-20">
               <span class="font-bold">Limited-time offer</span>
               <p>Get Signature Style Brush Pack Bundle FREE (worth &#36;179.99)</p>
@@ -65,6 +72,7 @@
             </div>
           </div>
         </div>
+        <span>Stephen Hanson</span>
       </div>
     </header>
 
@@ -75,7 +83,10 @@
           <p>More painting possibilities</p>
           <div class="options mt-20">
             <div>
-              <img src="./dist/img/ptr-module.jpg" alt="fish in the sea">
+              <div class="module-image">
+                <img src="./dist/img/ptr-module.jpg" alt="fish in the sea">
+                <span>Pavel Goloviy</span>
+              </div>
               <div class="text">
                 <h4 class="my-10"><span>New</span>Painter Essentials 8</h4>
                 <p class="my-10">The best affordable painting software for beginners</p>
@@ -83,7 +94,10 @@
               </div>
             </div>
             <div>
-              <img src="./dist/img/particleshop-module.jpg" alt="gears">
+              <div class="module-image">
+                <img src="./dist/img/particleshop-module.jpg" alt="gears">
+                <span>Federico Caputo</span>
+              </div>
               <div class="text">
                 <h4 class="my-10">ParticleShop</h4>
                 <p class="my-10">Powerful Adobe&reg; Photoshop&reg; brush plugin powered by Painter</p>
@@ -91,7 +105,9 @@
               </div>
             </div>
             <div>
-              <img src="./dist/img/brush-pack-module.jpg" alt="fish in the sea">
+              <div class="module-image">
+                <img src="./dist/img/brush-pack-module.jpg" alt="fish in the sea">
+              </div>
               <div class="text">
                 <h4 class="my-10">Brush Packs</h4>
                 <p class="my-10">Diverse add-on packs to embellish photo composites, graphic designs and paintings</p>
@@ -113,8 +129,10 @@
             </div>
             <div class="card pink">
               <img src="./dist/img/wacom.png" alt="camera">
+              <span>Yuki Matsumoto</span>
             </div>
             <div class="card dragon">
+              <span>Don Seegmiller</span>
             </div>
             <div class="card bg-grey">
               <div class="card-text">
@@ -214,8 +232,8 @@
             <li><a href="#">Terms of Use</a></li>
             <li><a href="#">Privacy</a></li>
             <li><a href="#">Cookies</a></li>
-            <li class="copy">Copyright &copy; 2021 Corel Corporation. All rights reserved.</li>
           </ul>
+          <span class="copy">Copyright &copy; 2021 Corel Corporation. All rights reserved.</span>
         </div>
       </div>
     </footer>

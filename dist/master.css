@@ -87,6 +87,25 @@ nav .navbar {
   flex-direction: column;
   justify-content: space-between;
 }
+@media all and (max-width: 991px) {
+  nav .navbar {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 0;
+    height: 70px;
+  }
+}
+nav .navbar .hamburger {
+  display: none;
+  color: #fff;
+  font-size: 30px;
+}
+@media all and (max-width: 991px) {
+  nav .navbar .hamburger {
+    display: block;
+  }
+}
 nav .navbar .contacts {
   display: flex;
   justify-content: flex-end;
@@ -108,13 +127,30 @@ nav .navbar .contacts ul li a i {
   font-size: 15px;
   color: #009CFF;
 }
+@media all and (max-width: 991px) {
+  nav .navbar .contacts {
+    display: none;
+  }
+}
 nav .navbar .navigation {
   display: flex;
   align-items: center;
 }
+@media all and (max-width: 991px) {
+  nav .navbar .navigation {
+    display: inline-block;
+    margin: 0 auto;
+  }
+}
 nav .navbar .navigation .logo {
   padding-bottom: 10px;
   margin-right: 30px;
+}
+@media all and (max-width: 991px) {
+  nav .navbar .navigation .logo {
+    padding-bottom: 0;
+    margin-right: 0;
+  }
 }
 nav .navbar .navigation .logo img {
   width: 90px;
@@ -139,12 +175,24 @@ nav .navbar .navigation ul li a i {
 nav .navbar .navigation ul li:hover a {
   color: #333333;
 }
+@media all and (max-width: 991px) {
+  nav .navbar .navigation ul {
+    display: none;
+  }
+}
 
 .jumbtron {
   background-image: url("../dist/img/bg-painter-home.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
+  position: relative;
+}
+@media all and (max-width: 767px) {
+  .jumbtron {
+    background-size: auto;
+    background-position: 68% 50%;
+  }
 }
 .jumbtron .text-container {
   width: 85%;
@@ -152,21 +200,91 @@ nav .navbar .navigation ul li:hover a {
   margin-right: auto;
   padding: 50px 0 70px;
 }
+@media all and (max-width: 767px) {
+  .jumbtron .text-container {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 65px;
+    padding-right: 65px;
+  }
+}
 .jumbtron .text-container .jumbo-text {
   width: 50%;
+}
+@media all and (max-width: 767px) {
+  .jumbtron .text-container .jumbo-text {
+    width: 100%;
+    text-align: center;
+  }
 }
 .jumbtron .text-container .jumbo-text img {
   width: 230px;
 }
-.jumbtron .text-container .jumbo-text p {
+@media all and (max-width: 767px) {
+  .jumbtron .text-container .jumbo-text img.logo-black {
+    display: none;
+  }
+}
+.jumbtron .text-container .jumbo-text img.logo-white {
+  display: none;
+}
+@media all and (max-width: 767px) {
+  .jumbtron .text-container .jumbo-text img.logo-white {
+    display: inline-block;
+  }
+}
+.jumbtron .text-container .jumbo-text > p {
   font-size: 18px;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+@media all and (max-width: 767px) {
+  .jumbtron .text-container .jumbo-text > p {
+    color: #fff;
+  }
+}
+.jumbtron .text-container .jumbo-text ul.button-mobile {
+  display: none;
+}
+.jumbtron .text-container .jumbo-text ul.button-mobile li {
+  padding: 5px 20px;
+  background-color: #fff;
+  border: 1px solid #fff;
+  text-transform: uppercase;
+  margin-right: 20px;
+}
+.jumbtron .text-container .jumbo-text ul.button-mobile li a {
+  text-decoration: none;
+  color: #000;
+}
+.jumbtron .text-container .jumbo-text ul.button-mobile li:hover {
+  background-color: transparent;
+}
+.jumbtron .text-container .jumbo-text ul.button-mobile li:hover a {
+  color: #fff;
+}
+@media all and (max-width: 767px) {
+  .jumbtron .text-container .jumbo-text ul.button-mobile {
+    display: inline-block;
+    margin: 0 auto;
+  }
 }
 .jumbtron .text-container .jumbo-text div.offer {
   font-style: italic;
   color: #C70EB8;
   font-size: 14px;
+}
+@media all and (max-width: 767px) {
+  .jumbtron .text-container .jumbo-text div.offer {
+    color: #fff;
+  }
+}
+@media all and (max-width: 767px) {
+  .jumbtron .text-container .jumbo-text .buttons ul {
+    display: none;
+  }
 }
 .jumbtron .text-container .jumbo-text .buttons ul li:first-child {
   padding: 5px 20px;
@@ -202,11 +320,18 @@ nav .navbar .navigation ul li:hover a {
 .jumbtron .text-container .jumbo-text .buttons ul li:last-child:hover a {
   color: #fff;
 }
+.jumbtron > span {
+  position: absolute;
+  font-size: 11px;
+  color: #fff;
+  right: 20px;
+  bottom: 20px;
+}
 
 main {
   background-color: #E8E8E8;
 }
-main .container {
+main .container #modules {
   width: 85%;
   margin-left: auto;
   margin-right: auto;
@@ -219,39 +344,74 @@ main .container #modules .options {
   display: flex;
   justify-content: space-between;
 }
-main .container #modules .options div {
+@media all and (max-width: 767px) {
+  main .container #modules .options {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}
+main .container #modules .options > div {
   width: calc(100% / 3 - 20px);
   display: flex;
   flex-direction: column;
 }
-main .container #modules .options div img {
+@media all and (max-width: 767px) {
+  main .container #modules .options > div {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+main .container #modules .options > div .module-image {
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+main .container #modules .options > div .module-image img {
   width: 100%;
 }
-main .container #modules .options div .text {
+main .container #modules .options > div .module-image span {
+  position: absolute;
+  font-size: 11px;
+  color: #989898;
+  bottom: 10px;
+  right: 20px;
+}
+main .container #modules .options > div .text {
   background-color: #fff;
   padding: 20px;
   width: 100%;
 }
-main .container #modules .options div .text h4 span {
+main .container #modules .options > div .text h4 span {
   text-transform: uppercase;
   color: #009CFF;
   font-style: italic;
   padding-right: 5px;
 }
-main .container #modules .options div .text p {
+main .container #modules .options > div .text p {
   font-size: 14px;
 }
-main .container #modules .options div .text a {
+main .container #modules .options > div .text a {
   text-decoration: none;
   color: #009CFF;
   font-size: 14px;
 }
-main .container #modules .options div .text a:hover {
+main .container #modules .options > div .text a:hover {
   text-decoration: underline;
 }
 
 #advantages {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 80px;
+}
+@media all and (max-width: 767px) {
+  #advantages {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 40px;
+  }
 }
 #advantages .adv-container {
   display: flex;
@@ -260,6 +420,11 @@ main .container #modules .options div .text a:hover {
 #advantages .adv-container .card {
   width: 50%;
   height: 300px;
+}
+@media all and (max-width: 767px) {
+  #advantages .adv-container .card {
+    width: 100%;
+  }
 }
 #advantages .adv-container .card .card-text {
   color: #fff;
@@ -298,15 +463,31 @@ main .container #modules .options div .text a:hover {
   background-repeat: no-repeat;
   background-position: center;
   padding: 10px 0 0 10px;
+  position: relative;
 }
-#advantages .adv-container .card.pink > img {
+#advantages .adv-container .card.pink img {
   width: 75%;
+}
+#advantages .adv-container .card.pink span {
+  position: absolute;
+  font-size: 11px;
+  color: #989898;
+  left: 20px;
+  bottom: 20px;
 }
 #advantages .adv-container .card.dragon {
   background-image: url("../dist/img/painter-master.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  position: relative;
+}
+#advantages .adv-container .card.dragon span {
+  position: absolute;
+  font-size: 11px;
+  color: #989898;
+  left: 20px;
+  bottom: 20px;
 }
 #advantages .adv-container .card.desk {
   background-image: url("../dist/img/business-education.jpg");
@@ -325,19 +506,35 @@ footer .links {
   padding: 40px 0 20px 10px;
   display: flex;
 }
+@media all and (max-width: 767px) {
+  footer .links {
+    flex-wrap: wrap;
+  }
+}
 footer .links .column {
   width: calc(100% / 4);
+}
+@media all and (max-width: 767px) {
+  footer .links .column {
+    width: 100%;
+    margin-bottom: 30px;
+  }
 }
 footer .links .column ul {
   margin-top: 10px;
   list-style: none;
 }
-footer .links .column ul a {
+@media all and (max-width: 767px) {
+  footer .links .column ul li {
+    margin-bottom: 10px;
+  }
+}
+footer .links .column ul li a {
   text-decoration: none;
   color: #3C3C3C;
   font-size: 12px;
 }
-footer .links .column ul a:hover {
+footer .links .column ul li a:hover {
   text-decoration: underline;
 }
 footer .links .column .social {
@@ -346,12 +543,23 @@ footer .links .column .social {
   padding-right: 20px;
   margin-top: 20px;
 }
+@media all and (max-width: 767px) {
+  footer .links .column .social {
+    justify-content: flex-start;
+    margin-left: -15px;
+  }
+}
 footer .links .column .social div {
   width: 30px;
   height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media all and (max-width: 767px) {
+  footer .links .column .social div {
+    margin-right: 15px;
+  }
 }
 footer .links .column .social div a {
   text-decoration: none;
@@ -366,12 +574,25 @@ footer .copyright {
   display: flex;
   align-items: center;
 }
+@media all and (max-width: 767px) {
+  footer .copyright {
+    height: 140px;
+  }
+}
 footer .copyright > div {
   width: 85%;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+@media all and (max-width: 767px) {
+  footer .copyright > div {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
 }
 footer .copyright > div ul {
   align-items: center;
@@ -380,9 +601,6 @@ footer .copyright > div ul li {
   margin-right: 20px;
   font-size: 12px;
 }
-footer .copyright > div ul li.copy {
-  color: #fff;
-}
 footer .copyright > div ul li a {
   text-decoration: none;
   color: #989898;
@@ -390,4 +608,8 @@ footer .copyright > div ul li a {
 footer .copyright > div ul li a:hover {
   color: #fff;
   text-decoration: underline;
+}
+footer .copyright > div span.copy {
+  font-size: 12px;
+  color: #fff;
 }
